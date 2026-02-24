@@ -252,6 +252,7 @@
     box-shadow: 1px 1px 1px 1px  rgba(0,0,0,0.5);
     font-size: 20px;
     color: #FFFF;
+    text-align:center;
 }
 .ordertitel{
     display: flex;
@@ -613,6 +614,7 @@ footer a{
         padding: 15px;
     }
 }
+
 
 
 
