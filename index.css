@@ -484,7 +484,7 @@ footer a{
   
     /* Hero */
     .hero{
-        padding: 80px 20px; /* أقل padding باش يدخل فالموبايل */
+        padding: 80px 20px;
         font-size: 13px;
         height: auto;
     }
@@ -613,3 +613,4 @@ footer a{
         padding: 15px;
     }
 }
+
