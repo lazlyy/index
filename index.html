@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body classs="body">
+    <header class="header">
+        <nav class="navbar">
+            <a href="">
+                <img class="logo" src="logo.png" alt="logo">
+            </a>
+            <div class="navtext">
+                <a href="">home</a>
+                <a href="">products</a>
+                <a href="">contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="hero">      
+        <h1>medical devices<br>manufacturing and<br>distribution</h1>
+        <P>supplying certified bandages and gauze pads</P>
+        <button class="herobtn" type="button">request partnership</button>
+    </div>
+    <main class="main">
+
+        <!-- -features- -->
+        <div>
+            <div class="features">
+            
+                <h3 class="titel1"> about us </h3>
+                <div class="featureselements">
+                    <div class="featurescard">
+                       <a href="">
+                           <i class="fa-solid fa-shield"></i>
+                           <div>  
+                               <h1>certified quality</h1>
+                               <p>supplying sterile,ce-certified products</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="featurescard">
+    
+                        <a href="">
+                            <i class="fa-solid fa-truck"></i>                        
+                            <div>
+                                <h1>nationwide logistics</h1>
+                                <p>swift and reliable delivery to all regions</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="featurescard">
+                        <a href="">
+                            <i class="fa-solid fa-user"></i>
+                          <div>
+                              <h1>+500 establishment</h1>
+                              <p>trustin our doctorsandour services</p>
+                            </div>
+                        </a> 
+                    </div>
+                 
+                </div>
+            </div>
+        </div>
+        <!-- -cards- -->
+        <div class="ourproducts">
+            <h1 class="titel2">our products<h1>
+            <div class="cards">
+                <div class="card">
+                    <h1 class="bandages">bandages</h1>
+                    <img src="bandes.png" alt="bandages pic" id="bandagepic">
+                    <select class="select" name="" id="bandageselected">
+                        <option value="" data-img="bandes.png">select a type</option>
+                        <option data-price="2000" data-img="gauze bandage.png">gauze bandage</option>
+                        <option data-price="2200" data-img="velpeau bandage.png">velpeau bandage</option>
+                        <option data-price="2400" data-img="tubular bandage.png">tubular bandage</option>
+                        <option data-price="2800" data-img="plaster bandage.png">plaster bandage</option>
+                    </select>
+                    <p>price: <span id="bandageprice"> 0 </span>da</p>
+                    <button class="cardbtn">details </button>
+                </div>
+                <div class="card">
+                    <h1 class="compresses">compresses</h1>
+                    <img src="compresses.png" alt="pic of  compresses" id="compressepic">
+                    <select class="select" name="" id="compresseselected">
+                        <option value="" data-img="compresses.png" >select a type</option>
+                        <option data-price="600" data-img="compresses stériles.png">sterile compresses</option>
+                        <option data-price="500" data-img="compresses purifiées.png">purified compresses</option>
+                    </select>
+                    <p>price:<span id="compresseprice"> 0 </span>da</p>
+                    <button class="cardbtn">details </button>
+                </div>
+            </div>
+        </div>
+        <!-- -2- -->
+        <div class="order-offer">
+            <!-- -your  order- -->
+            <div class="yourorder">
+              <h3 class="ordertitel">your order:</h3>
+                <div class="orders">
+                  <div class="order">
+                       <h1>gauze bandage :</h1>
+                       <button onclick="minusgauzebandage()">-</button>
+                       <input type="number" min="0" id="input1" class="pdoductinput">
+                       <button onclick="plusgauzebandage()">+</button>
+                       <p> <span id="price1" class="price">0</span> da</p>
+                    </div>
+                    <div class="order">
+                        <h1>velpeau bandage :</h1>
+                        <button onclick="minusvelpeaubandage()">-</button>
+                        <input type="number" min="0" id="input2" class="pdoductinput">
+                        <button onclick="plusvelpeaubandage()">+</button>
+                        <p> <span id="price2" class="price">0</span> da</p>
+                    </div>
+                    <div class="order">
+                       <h1>tubular bandage :</h1>
+                       <button onclick="minustubularbandage()">-</button>
+                       <input type="number" min="0" id="input3" class="pdoductinput">
+                       <button onclick="plustubularbandage()">+</button>
+                       <p> <span id="price3" class="price">0</span> da</p>
+                    </div>
+                    <div class="order">
+                       <h1>plaster bandage :</h1>
+                       <button onclick="minusplasterbandage()">-</button>
+                       <input type="number" min="0" id="input4" class="pdoductinput">
+                       <button onclick="plusplasterbandage()">+</button>
+                       <p> <span id="price4" class="price">0</span> da</p>
+                    </div>
+                    <div class="order">
+                       <h1>sterile compresses :</h1>
+                       <button onclick="minussterilecompresses()">-</button>
+                       <input type="number" min="0" id="input5" class="pdoductinput">
+                       <button onclick="plussterilecompresses()">+</button>
+                       <p> <span id="price5" class="price">0</span> da</p>
+                    </div>
+                    <div class="order">
+                       <h1>purified compresses :</h1>
+                       <button onclick="minuspurifiedcompresses()">-</button>
+                       <input type="number" min="0" id="input6" class="pdoductinput">
+                       <button onclick="pluspurifiedcompresses()">+</button>
+                       <p> <span id="price6" class="price">0</span> da</p>
+                    </div>
+                  <p class="totalprice1">total price : <span id="totalprice1">0</span> DA</p>
+                </div>
+            </div>
+    
+         <!-- -offers_ -->
+           <div class="offers">
+               <h1 class="oferstitel">offers :</h1>
+               <div class="offerscard">
+                   <div class="offersbtn">
+                       <button id="monthlybtn">monthly</button>
+                       <button id="yearlybtn">yearly</button>
+                    </div>
+                    <div class="offercard">
+                        <div class="offer" id="basicprice">basic price:  </div>
+                        <div class="offer" id="proprice">pro price: </div>
+                        <P class="totalprice2" id="totalprice2">total price : <span>0</span> DA</P>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- -2- -->
+        <div class="users">
+            <!-- -FORM- -->
+            <form action="" class="form" id="form">
+                <h1>get early access</h1>
+                <div  class="form-input">
+    
+                    <label for="name" id="nametitel">name :</label>
+                    <input type="text" id="name" placeholder="your establishment name">
+                    <P style="visibility:hidden" id="noname">enter your name</P>
+                    <label for="email" id="emailtitel">email :</label>
+                    <input type="email" id="email" placeholder="your email">
+                    <P style="visibility:hidden" id="noemail">enter your email</P>
+                    <label for="number" id="numbertitel">number :</label>
+                    <input type="number" id="number" placeholder="your number" >
+                    <P style="visibility:hidden" id="nonumber">enter your number</P>
+                    <label for="city" id="citytitel">city :</label>
+                    <input type="text" id="city" placeholder="your city">
+                    <P style="visibility:hidden" id="nocity">enter your city</P>
+                </div>
+                <button class="formbtn" id="formbtn" type="submit">registed and buy</button>
+            </form> 
+    
+            <!-- -Total users- -->
+            <div class="userscard">
+                <h1>total users joined :</h1>
+                <ul class="usersinfo" id="allusers">
+                    <li>para pharma / city : alger</li>
+                    <li>cetopharma / city : beskra</li>
+                </ul>
+                <div  class="totalusers">
+                    <i class="fa-solid fa-user"></i>
+                    <p>total users: <span id="totalusers">800</span></p>
+                </div>
+            </div>
+    
+        </div>
+    </main>
+
+    <!-- -FOOTER- -->
+    <footer class="footer">
+        <h1>© 2026 ORTHO BANDE</h1>
+        <div class="footericons">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
