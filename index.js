@@ -188,32 +188,32 @@ function updateTotalPrice(){
     })
     totalprice1.innerText=total
 }
-function totalQuantity(){
-    let inputs=document.querySelectorAll("input[type='number']")
-    let totalqty=0
-    inputs.forEach(input=>{
-        totalqty+=parseInt(input.value)||0
-    })
-    console.log(totalqty)
-    return totalqty;
-}
-let qty=totalQuantity()
-let discount=0
-if (plantype==='monthly'){
-    if (qty>10){
-        discount=0.03
-    }
-}
-else if(plantype==='yearly'){
-    if (qty<10){
-        discount=0.03
-    }
-    else{
-        discount=0.05 
-    }
-}
-let offertotal=totalprice1.value-(totalprice1.value*discount)
-totalprice2.innerText=offertotal
+// function totalQuantity(){
+//     let inputs=document.querySelectorAll("input[type='number']")
+//     let totalqty=0
+//     inputs.forEach(input=>{
+//         totalqty+=parseInt(input.value)||0
+//     })
+//     console.log(totalqty)
+//     return totalqty;
+// }
+// let qty=totalQuantity()
+// let discount=0
+// if (plantype==='monthly'){
+//     if (qty>10){
+//         discount=0.03
+//     }
+// }
+// else if(plantype==='yearly'){
+//     if (qty<10){
+//         discount=0.03
+//     }
+//     else{
+//         discount=0.05 
+//     }
+// }
+// let offertotal=totalprice1.value-(totalprice1.value*discount)
+// totalprice2.innerText=offertotal
 
 // -FORM-
 const userform=document.getElementById('form')
@@ -300,4 +300,5 @@ form.addEventListener('submit',()=>{
     const totalusers=document.getElementById('totalusers')
     totalusers.textContent=parseInt(totalusers.textContent)+1
 })
+
 
