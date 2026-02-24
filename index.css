@@ -530,15 +530,15 @@ footer a{
         flex-direction: column;
     }
     .order  h1{
-        font-size: 13px;
+        font-size: 12.5px;
     }
     .order  p{
-        font-size: 17px;
+        font-size: 15px;
     }
     .totalprice1{
         /* margin-top: 20px;
         padding: 10px 70px; */
-        font-size: 13.5px;
+        font-size: 12.5px;
     }
     .yourorder{
         width: 90vw;
@@ -547,7 +547,7 @@ footer a{
     }
     .order{
         gap: 0px;
-        grid-template-columns: 150px 15px 40px 15px  100px;
+        grid-template-columns: 140px 15px 40px 15px  100px;
     }
   
     /* Offers */
@@ -613,4 +613,5 @@ footer a{
         padding: 15px;
     }
 }
+
 
